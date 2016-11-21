@@ -9,7 +9,6 @@ function AddController($state, UserService){
 		console.log('Clicked Add button!');
 		UserService.addUser(user).then((resp) => {
       	console.log('response', resp);
-      	$state.go('home');
     });
 
 	};
