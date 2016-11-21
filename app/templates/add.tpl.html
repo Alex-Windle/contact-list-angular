@@ -1,1 +1,21 @@
 <h1>Add Template</h1>
+
+<form ng-submit="add.addUser(user)">
+
+	<label></label>
+	<input name="name" type="text" placeholder="Name" ng-model="user.name">
+	
+	<label></label>
+	<input name="email" type="email" placeholder="Email" ng-model="user.email">
+	
+	
+	<label></label>
+	<input name="phone" type="text" placeholder="Phone" ng-model="user.phone">
+	
+
+	<label></label>
+	<input name="location" type="text" placeholder="Address" ng-model="user.location">
+
+	<button>Add</button>
+
+</form>
