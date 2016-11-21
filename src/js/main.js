@@ -6,6 +6,7 @@ import { LayoutController } from './controllers/layout';
 import { ListController } from './controllers/list';
 import { SingleController }  from './controllers/single'; 
 import { AddController } from './controllers/add'; 
+import { UserService } from './services/user-server';
 
 angular
 	.module('app', ['ui.router'])
@@ -13,4 +14,5 @@ angular
 	.controller('LayoutController', LayoutController) 
 	.controller('ListController', ListController)
 	.controller('SingleController', SingleController)
-	.controller('AddController', AddController); 
+	.controller('AddController', AddController)
+	.service('UserService', UserService); 
