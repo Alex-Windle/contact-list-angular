@@ -2,20 +2,28 @@
 
 <form ng-submit="add.addUser(user)">
 
-	<label></label>
-	<input name="name" type="text" placeholder="Name" ng-model="user.name">
-	
-	<label></label>
-	<input name="email" type="email" placeholder="Email" ng-model="user.email">
-	
-	
-	<label></label>
-	<input name="phone" type="text" placeholder="Phone" ng-model="user.phone">
-	
+	<label class="label">Name</label>
+	<p class="control">
+	  <input class="input" type="text" placeholder="Text input" ng-model="user.name">
+	</p>
 
-	<label></label>
-	<input name="location" type="text" placeholder="Address" ng-model="user.location">
+	<label class="label">Email</label>
+	<p class="control has-icon has-icon-right">
+  	<input class="input is-danger" type="text" placeholder="Email input" value="hello@" ng-model="user.email">
 
-	<button>Add</button>
+  	<label class="label">Phone</label>
+	<p class="control">
+	  <input class="input" type="text" placeholder="Text input" ng-model="user.phone">
+	</p>
+
+	<label class="label">Location</label>
+	<p class="control">
+	  <input class="input" type="text" placeholder="Text input" ng-model="user.location">
+	</p>
+
+	<p class="control">
+	  	<button class="button is-primary">Submit</button>
+	  	<button class="button is-link"> <-- </button>
+	</p>
 
 </form>
