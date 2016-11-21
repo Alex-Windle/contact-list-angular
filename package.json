@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "angular": "^1.5.8",
-    "angular-ui-router": "^0.3.2"
+    "angular-ui-router": "^0.3.2",
+    "bulma": "^0.2.3"
   }
 }
