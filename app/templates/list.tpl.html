@@ -1,7 +1,15 @@
-<h1>List Template</h1>
-
-<ul>
-	<li>Item</li>
-	<li>Item</li>
-	<li>Item</li>
-</ul>
+<div class="container">
+	<h1>Contacts</h1>
+	<ul>
+		<li ng-repeat="user in list.list">
+			<a href="#/list/{{ user.id }}">
+	      <div class="card">
+	        <h3>{{ user.name }}</h3>
+	        <h3>{{ user.email }}</h3>
+	        <h3>{{ user.phone }}</h3>
+	        <h3>{{ user.location }}</h3>
+	      </div>
+	    </a>
+		</li>
+	</ul>
+</div>

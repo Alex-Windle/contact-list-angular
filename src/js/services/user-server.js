@@ -6,6 +6,10 @@ function UserService($http){
 		return $http.post(SERVER, user);
 	};
 
+	this.getList = function(){
+		return $http.get(SERVER);
+	};
+
 }
 
 UserService.$inject = ['$http']; 
