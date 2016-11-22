@@ -6,9 +6,8 @@ function AddController($state, UserService){
 	this.addUser = addUser;
 
 	function addUser(user){
-		console.log('Clicked Add button!');
 		UserService.addUser(user).then((resp) => {
-      	console.log('response', resp);
+      	$state.go('root.list');
     });
 
 	};
