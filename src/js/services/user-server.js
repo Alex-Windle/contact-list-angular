@@ -10,9 +10,12 @@ function UserService($http, $stateParams){
 		return $http.get(SERVER);
 	};
 
-	this.getSingle = function(userid){
-		console.log('Activate Service: getSingle!');
-		return $http.get(SERVER + "/" + userid); 
+	this.getSingle = function(userId){
+		return $http.get(SERVER + "/" + userId); 
+	};
+
+	this.deleteSingle = function(userId){
+		return $http.delete(SERVER + "/" + userId);
 	}; 
 
 }
