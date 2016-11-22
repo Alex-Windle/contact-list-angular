@@ -17,8 +17,9 @@ function SingleController($stateParams, UserService){
 
 	function deleteUser(user){
 		UserService.deleteSingle(user).then((resp)=>{
-			console.log("deleted contact");
+		// $state.go('root.list');
 		});
+		
 	}; 
 
 	// function updateUser(user){
