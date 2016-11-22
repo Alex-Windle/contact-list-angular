@@ -1,6 +1,6 @@
 import { SERVER } from '../server'; 
 
-function UserService($http){
+function UserService($http, $stateParams){
 
 	this.addUser = function(user){
 		return $http.post(SERVER, user);
@@ -10,7 +10,12 @@ function UserService($http){
 		return $http.get(SERVER);
 	};
 
+	this.getSingle = function(userid){
+		console.log('Activate Service: getSingle!');
+		return $http.get(SERVER + "/" + userid); 
+	}; 
+
 }
 
-UserService.$inject = ['$http']; 
+UserService.$inject = ['$http', '$stateParams']; 
 export { UserService }; 

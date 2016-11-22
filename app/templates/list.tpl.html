@@ -2,7 +2,7 @@
 	<h1>Contacts</h1>
 	<ul>
 		<li ng-repeat="user in list.list">
-			<a href="#/list/{{ user.id }}">
+		<a href="#/list/{{ user._id }}">
 	      <div class="card">
         	<img class="img" ng-src='{{ user.pic }}' alt="Image" />
 	        <h3>{{ user.name }}</h3>
