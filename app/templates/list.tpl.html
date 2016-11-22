@@ -4,6 +4,9 @@
 		<li ng-repeat="user in list.list">
 			<a href="#/list/{{ user.id }}">
 	      <div class="card">
+	      	<figure class="image is-64x64">
+        		<img src={{ user.pic }} alt="Image">
+      		</figure>
 	        <h3>{{ user.name }}</h3>
 	        <h3>{{ user.email }}</h3>
 	        <h3>{{ user.phone }}</h3>
