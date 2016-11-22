@@ -1,27 +1,28 @@
 <div class="container">
 	<h1>Add Contact</h1>
 	<form ng-submit="add.addUser(user)">
-		<figure class="image is-128x128">
-  		<img src="http://placehold.it/128x128">
-		</figure>
-
 		<label class="label">Name</label>
 		<p class="control">
-		  <input class="input" type="text" placeholder="Text input" ng-model="user.name">
+		  <input class="input" type="text" placeholder="Name" ng-model="user.name" required >
 		</p>
 
 		<label class="label">Email</label>
 		<p class="control has-icon has-icon-right">
-	  	<input class="input is-danger" type="text" placeholder="Email input" value="hello@" ng-model="user.email">
+	  	<input class="input is-danger" type="text" placeholder="Email" value="hello@" ng-model="user.email" required >
 
 	  	<label class="label">Phone</label>
 		<p class="control">
-		  <input class="input" type="text" placeholder="Text input" ng-model="user.phone">
+		  <input class="input" type="text" placeholder="404-123-4567" ng-model="user.phone" required >
 		</p>
 
 		<label class="label">Location</label>
 		<p class="control">
-		  <input class="input" type="text" placeholder="Text input" ng-model="user.location">
+		  <input class="input" type="text" placeholder="Atlanta, GA" ng-model="user.location" required >
+		</p>
+
+		<label class="label">Photo</label>
+		<p class="control">
+		  <input class="input" type="url" placeholder="www.cute-puppy-picture.jpg" ng-model="user.pic" required >
 		</p>
 
 		<p class="control">
