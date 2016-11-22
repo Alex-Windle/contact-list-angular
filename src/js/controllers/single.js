@@ -15,12 +15,22 @@ function SingleController($stateParams, UserService){
 
 	init();
 
-	function deleteUser(banana){
-		console.log("clicked button");
-		UserService.deleteSingle(banana).then((resp)=>{
+	function deleteUser(user){
+		UserService.deleteSingle(user).then((resp)=>{
 			console.log("deleted contact");
 		});
 	}; 
+
+	// function updateUser(user){
+	// 	console.log("clicked button");
+	// 	//go to an edit page ( populated with old data )
+	// 	$state.go('')
+
+	// 	//click the submit button and then send PUT request
+	// 	UserService.updateUser(user).then((resp)=>{
+
+	// 	})
+	// }; 
 }
 
 SingleController.$inject = ['$stateParams', 'UserService']; 

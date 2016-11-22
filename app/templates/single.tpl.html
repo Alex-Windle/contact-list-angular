@@ -1,9 +1,13 @@
-<a href="#/"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-<div>
-	<img class="img" ng-src='{{ single.user.pic }}' alt="Image" />
-	<h3>{{ single.user.name }} </h3>
-	<h3>{{ single.user.email }}</h3>
-	<h3>{{ single.user.phone }}</h3>
-	<h3>{{ single.user.location }}</h3>
+<div class="container">
+	<a href="#/">
+		<i class="fa fa-arrow-left" aria-hidden="true"></i>
+	</a>
+	<div>
+		<img class="img" ng-src='{{ single.user.pic }}' alt="Image" />
+		<h3>{{ single.user.name }} </h3>
+		<h3>{{ single.user.email }}</h3>
+		<h3>{{ single.user.phone }}</h3>
+		<h3>{{ single.user.location }}</h3>
+	</div>
+	<button ng-click="single.deleteUser(single.user._id)">Delete</button>
 </div>
-<button ng-click="single.deleteUser(single.user._id)">Delete</button>
