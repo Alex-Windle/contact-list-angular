@@ -1,4 +1,4 @@
-function SingleController($stateParams, UserService){
+function SingleController($stateParams, UserService, $state){
 	console.log('Activate SingleController!');
 	
 	let vm = this;
@@ -17,7 +17,7 @@ function SingleController($stateParams, UserService){
 
 	function deleteUser(user){
 		UserService.deleteSingle(user).then((resp)=>{
-		// $state.go('root.list');
+		$state.go('root.list');
 		});
 		
 	}; 
@@ -34,7 +34,7 @@ function SingleController($stateParams, UserService){
 	// }; 
 }
 
-SingleController.$inject = ['$stateParams', 'UserService']; 
+SingleController.$inject = ['$stateParams', 'UserService', '$state']; 
 export { SingleController }; 
 
 // $stateParams.id 
